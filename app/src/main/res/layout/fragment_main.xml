@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/back"
+        android:layout_marginTop="5dp"
+        android:foreground="@drawable/touch_selector_podcast"
+        app:cardElevation="@dimen/elevation_low"
+        app:cardUseCompatPadding="false">
+
+        <android.support.v7.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            app:iconifiedByDefault="false"
+            app:queryHint="@string/hint"
+            android:id="@+id/searchField"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/back"
+        android:layout_marginTop="5dp"
+        android:foreground="@drawable/touch_selector_podcast"
+        app:cardElevation="@dimen/elevation_low"
+        app:cardUseCompatPadding="false">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/podcastImage"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/podcastTitle"/>
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+</LinearLayout>
